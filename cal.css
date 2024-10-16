@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6f7ff; /* Background color for full page */
+}
+
+.calculator {
+  background-color: #ffffff; /* White background for the calculator */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 60px; /* Keep input height consistent */
+  background-color: #f2f2f2; /* Soft grey for input */
+  border: 2px solid #b3b3b3; /* Slight border around input */
+  margin-bottom: 15px;
+  padding: 0 15px;
+  font-size: 26px;
+  font-family: 'Arial', sans-serif;
+  text-align: right;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  color: #333333; /* Dark text color */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  box-sizing: border-box; /* Ensures button sizing matches the input */
+}
+
+button {
+  width: 100%;
+  height: 70px;
+  font-size: 26px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold; /* Bold text */
+  border: none;
+  background-color: #d9d9d9; /* Softer grey for default buttons */
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #c4c4c4; /* Darker grey on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+  background-color: #b0b0b0; /* Darker when clicked */
+  transform: translateY(0px); /* Button returns to normal */
+}
+
+button.highlight {
+  background-color: #66b3ff; /* Blue for special buttons */
+  color: white;
+}
+
+button.highlight:hover {
+  background-color: #4da6ff; /* Darker blue on hover */
+}
+
+button.highlight:active {
+  background-color: #3385cc; /* Even darker when clicked */
+}
+
+button.operator {
+  background-color: #ff6666; /* Red for operator buttons */
+  color: white;
+}
+
+button.operator:hover {
+  background-color: #ff4d4d; /* Darker red on hover */
+}
+
+button.operator:active {
+  background-color: #e60000; /* Even darker when clicked */
+}

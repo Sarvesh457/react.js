@@ -1,0 +1,105 @@
+.resume-builder-container {
+    display: flex; /* Use flexbox for layout */
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-container, .resume-display {
+    flex: 1; /* Make both sections take equal space */
+    padding: 20px;
+  }
+  
+  .form-container {
+    border-right: 2px solid #ddd; /* Add a separator */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input, textarea {
+    width: calc(100% - 20px);
+    padding: 8px; /* Reduced padding for smaller input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  textarea {
+    height: 60px; /* Adjusted height for textarea */
+    resize: vertical;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .success-message {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .resume-display {
+    margin-left: 20px; /* Space between form and resume */
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .resume-display h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .resume-section {
+    margin-bottom: 15px;
+  }
+  
+  .resume-section h3 {
+    color: #4caf50;
+    margin-bottom: 5px;
+  }
+  
+  .resume-section p {
+    margin: 0;
+    color: #555;
+  }
+  

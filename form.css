@@ -1,0 +1,135 @@
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Softer gradient background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Container and Form Box */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  padding: 40px;
+  border-radius: 25px; /* More rounded corners */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); /* Darker, larger shadow */
+  width: 450px; /* Increased width for better spacing */
+  max-width: 100%;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1); /* Initial scale */
+}
+
+/* Hover Effect for Form Box */
+.form-container:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Form title */
+.form-title {
+  font-size: 2.2em; /* Slightly larger font */
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 800;
+  letter-spacing: 2px; /* Increased letter spacing */
+  text-transform: uppercase; /* Title in uppercase */
+  background: -webkit-linear-gradient(#e72f2f, #fad0c4); /* Gradient text effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* More rounded inputs */
+  transition: border 0.3s ease;
+  background-color: #f9f9f9; /* Softer input background */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Inner shadow */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #e03535; /* Red border on focus */
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5); /* Light red glow on focus */
+}
+
+/* Error class for invalid input */
+input.error {
+  border-color: red;
+  background-color: #ffe6e6; /* Light red background */
+  animation: shake 0.3s;
+}
+
+/* Error message styling */
+.error-msg {
+  color: red;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Success message styling */
+.success-msg {
+  color: #28a745;
+  font-size: 1em;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #c83a3a; /* Bright red for submit button */
+  color: white;
+  border: none;
+  padding: 15px 20px; /* Slightly larger padding */
+  border-radius: 20px; /* Rounded button */
+  font-size: 1.1em; /* Increased font size */
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #d12222;
+  transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Animation for error */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
